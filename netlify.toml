@@ -1,9 +1,16 @@
 [build]
   command = "CI=false DISABLE_ESLINT_PLUGIN=true npm run build"
   publish = "build"
-  environment = { CI = "false", DISABLE_ESLINT_PLUGIN = "true" }
+
+[build.environment]
+  CI = "false"
+  DISABLE_ESLINT_PLUGIN = "true"
+  PUBLIC_URL = "/"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200 
+  status = 200
+
+[build.processing]
+  skip_processing = false 
