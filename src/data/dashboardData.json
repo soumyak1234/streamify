@@ -1,0 +1,47 @@
+{
+  "metrics": {
+    "totalUsers": 8574320,
+    "activeUsers": 3428910,
+    "totalStreams": 78456320,
+    "revenue": 23456780,
+    "topArtist": "Arijit Singh"
+  },
+  "userGrowthData": [
+    { "month": "Jan", "totalUsers": 6500000, "activeUsers": 2800000 },
+    { "month": "Feb", "totalUsers": 6800000, "activeUsers": 2950000 },
+    { "month": "Mar", "totalUsers": 7200000, "activeUsers": 3100000 },
+    { "month": "Apr", "totalUsers": 7500000, "activeUsers": 3250000 },
+    { "month": "May", "totalUsers": 7850000, "activeUsers": 3300000 },
+    { "month": "Jun", "totalUsers": 8000000, "activeUsers": 3350000 },
+    { "month": "Jul", "totalUsers": 8150000, "activeUsers": 3380000 },
+    { "month": "Aug", "totalUsers": 8250000, "activeUsers": 3400000 },
+    { "month": "Sep", "totalUsers": 8350000, "activeUsers": 3410000 },
+    { "month": "Oct", "totalUsers": 8450000, "activeUsers": 3420000 },
+    { "month": "Nov", "totalUsers": 8500000, "activeUsers": 3425000 },
+    { "month": "Dec", "totalUsers": 8574320, "activeUsers": 3428910 }
+  ],
+  "revenueDistribution": [
+    { "source": "Premium Subscriptions", "value": 15000000, "color": "#8884d8" },
+    { "source": "Ad Revenue", "value": 8000000, "color": "#82ca9d" },
+    { "source": "Student Plans", "value": 4000000, "color": "#ffc658" },
+    { "source": "Family Plans", "value": 6000000, "color": "#ff8042" },
+    { "source": "Regional Plans", "value": 2000000, "color": "#a4de6c" }
+  ],
+  "topSongs": [
+    { "name": "Kesariya", "artist": "Arijit Singh", "streams": 9823450 },
+    { "name": "Jhoome Jo Pathaan", "artist": "Arijit Singh, Vishal-Sheykhar", "streams": 8765430 },
+    { "name": "Tere Vaaste", "artist": "Varun Jain, Sachin-Jigar", "streams": 7654320 },
+    { "name": "Kahani Suno", "artist": "Kaifi Khalil", "streams": 6543210 },
+    { "name": "Malang Sajna", "artist": "Sachet-Parampara", "streams": 5432100 }
+  ],
+  "recentStreams": [
+    {
+      "id": 1,
+      "songName": "Kesariya",
+      "artist": "Arijit Singh",
+      "dateStreamed": "2024-02-07T15:30:00",
+      "streamCount": 982345,
+      "userId": "USER123"
+    }
+  ]
+} 
