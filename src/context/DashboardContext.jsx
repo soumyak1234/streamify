@@ -4,25 +4,26 @@ import dashboardData from '../data/dashboardData.json';
 const DashboardContext = createContext();
 
 export const DashboardProvider = ({ children }) => {
-  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [data, setData] = useState(null);
 
   useEffect(() => {
-    try {
-      // Simulate API call delay
-      setTimeout(() => {
+    // Simulate API call with the local data
+    const fetchData = async () => {
+      try {
         setData(dashboardData);
+      } catch (error) {
+        console.error('Error loading dashboard data:', error);
+      } finally {
         setLoading(false);
-      }, 1000);
-    } catch (err) {
-      setError(err);
-      setLoading(false);
-    }
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
-    <DashboardContext.Provider value={{ dashboardData: data, loading, error }}>
+    <DashboardContext.Provider value={{ dashboardData: data, loading }}>
       {children}
     </DashboardContext.Provider>
   );
