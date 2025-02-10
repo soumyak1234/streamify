@@ -1,6 +1,7 @@
 [build]
-  command = "CI=false npm run build"
+  command = "CI=false DISABLE_ESLINT_PLUGIN=true npm run build"
   publish = "build"
+  environment = { CI = "false", DISABLE_ESLINT_PLUGIN = "true" }
 
 [[redirects]]
   from = "/*"
