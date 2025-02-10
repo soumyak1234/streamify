@@ -8,9 +8,9 @@ export const DashboardProvider = ({ children }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    // Simulate API call with the local data
     const fetchData = async () => {
       try {
+        console.log('Loading dashboard data:', dashboardData);
         setData(dashboardData);
       } catch (error) {
         console.error('Error loading dashboard data:', error);
@@ -21,6 +21,8 @@ export const DashboardProvider = ({ children }) => {
 
     fetchData();
   }, []);
+
+  console.log('Current dashboard state:', { data, loading });
 
   return (
     <DashboardContext.Provider value={{ dashboardData: data, loading }}>
@@ -35,4 +37,4 @@ export const useDashboard = () => {
     throw new Error('useDashboard must be used within a DashboardProvider');
   }
   return context;
-}; 
+};

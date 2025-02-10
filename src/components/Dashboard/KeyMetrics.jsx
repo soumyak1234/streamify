@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Paper, Typography } from '@mui/material';
+import { Grid, Paper, Typography, Box } from '@mui/material';
 import { useDashboard } from '../../context/DashboardContext';
 
 const formatIndianCurrency = (amount) => {
@@ -19,7 +19,11 @@ const KeyMetrics = () => {
   const { dashboardData, loading } = useDashboard();
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <Box sx={{ display: 'flex', justifyContent: 'center', p: 3 }}>
+        <Typography>Loading...</Typography>
+      </Box>
+    );
   }
 
   const metrics = dashboardData?.metrics || {};
