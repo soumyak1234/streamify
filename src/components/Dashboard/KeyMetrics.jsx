@@ -19,11 +19,7 @@ const KeyMetrics = () => {
   const { dashboardData, loading } = useDashboard();
 
   if (loading) {
-    return (
-      <Box sx={{ display: 'flex', justifyContent: 'center', p: 3 }}>
-        <Typography>Loading...</Typography>
-      </Box>
-    );
+    return <div>Loading...</div>;
   }
 
   const metrics = dashboardData?.metrics || {};
@@ -64,4 +60,4 @@ const KeyMetrics = () => {
   );
 };
 
-export default KeyMetrics; 
+export default KeyMetrics;

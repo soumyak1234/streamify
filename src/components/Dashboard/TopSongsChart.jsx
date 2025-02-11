@@ -58,4 +58,4 @@ const TopSongsChart = () => {
   );
 };
 
-export default TopSongsChart; 
+export default TopSongsChart;

@@ -21,7 +21,33 @@ const Loader = () => {
         }}
       >
         <CircularProgress size={60} thickness={4} />
-        
+        <Box
+          sx={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Box
+            component="img"
+            src="/logo192.png"
+            sx={{
+              width: 30,
+              height: 30,
+              animation: 'pulse 1.5s ease-in-out infinite',
+              '@keyframes pulse': {
+                '0%': { transform: 'scale(0.8)' },
+                '50%': { transform: 'scale(1.2)' },
+                '100%': { transform: 'scale(0.8)' },
+              },
+            }}
+          />
+        </Box>
       </Box>
       <Typography
         variant="h6"
@@ -39,4 +65,4 @@ const Loader = () => {
   );
 };
 
-export default Loader; 
+export default Loader;

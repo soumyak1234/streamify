@@ -1,10 +1,11 @@
 import React from 'react';
-import { Paper, Typography } from '@mui/material';
+import { Paper, Typography, useTheme, Box } from '@mui/material';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { useDashboard } from '../../context/DashboardContext';
 
 const RevenueDistribution = () => {
   const { dashboardData, loading } = useDashboard();
+  const theme = useTheme();
 
   if (loading) {
     return <div>Loading...</div>;
@@ -90,4 +91,4 @@ const RevenueDistribution = () => {
   );
 };
 
-export default RevenueDistribution; 
+export default RevenueDistribution;

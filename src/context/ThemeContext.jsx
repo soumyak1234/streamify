@@ -87,4 +87,4 @@ export const useThemeMode = () => {
     throw new Error('useThemeMode must be used within a ThemeProvider');
   }
   return context;
-}; 
+};

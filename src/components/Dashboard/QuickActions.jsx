@@ -59,4 +59,4 @@ const QuickActions = () => {
   );
 };
 
-export default QuickActions; 
+export default QuickActions;

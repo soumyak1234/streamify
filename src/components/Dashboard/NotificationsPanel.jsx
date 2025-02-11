@@ -116,4 +116,4 @@ const NotificationsPanel = () => {
   );
 };
 
-export default NotificationsPanel; 
+export default NotificationsPanel;

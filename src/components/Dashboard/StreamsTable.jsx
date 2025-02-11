@@ -159,4 +159,4 @@ const StreamsTable = () => {
   );
 };
 
-export default StreamsTable; 
+export default StreamsTable;
